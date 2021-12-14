@@ -1,0 +1,68 @@
+phương thức ảo là phương thức được khai báo nhưng ko có phần body 
+
+abstract class Person{
+	abstract void display(); // phương thức ảo là đây
+}
+
+
+một lớp trừu tượng thì phải có ít nhất một phương thức ảo, có thể có phương thức non-abstract nhưng
+phải có ít nhất 1 phương thức abstract 
+
+
+chỉ có thể kế thừa từ một class
+tính trừu tượng là một tiến trình ẩn đi các chi tiết cụ thể mà chỉ show cho người dùng những chức năng 
+của nó làm gì thoi
+có 2 cách để sử dụng tính trừu tượng đó là sài:
++) sử dụng lớp abstract 
++) sử dụng interface 
+
+một class kế thừa từ lớp abstract nếu như ko muốn trở thành lớp abstract thì cần phải overwriting all phương thức
+ảo của lớp cha.
+abstract class có các biến final, static, non-final, non-static
+
+INTERFACE:
+Chỉ có phương thức abstract
+Có thể có đa kế thừa
+Interface chỉ có các biến static and final 
+Sử dụng từ khoá interface để khai báo 
+
+
+===============
+WRAPPER CLASS => CUNG CẤP ĐỂ SỬ DỤNG KIỂU DỮ LIỆU NGUYÊN THUỶ NHƯ MỘT ĐỐI TƯỢNG (VD: Integer, Float, String)
+
+===============
+
+TẠI SAO LẠI SỬ DỤNG INTERFACE ????
+BỞI VÌ TRONG JAVA KHÔNG HỖ TRỢ ĐA KẾ THỪA, CÓ NGHĨA LÀ MỘT CLASS THÌ CHỈ CÓ THỂ KẾ THỪA TỪ MỘT CLASS CHA DUY NHẤT
+NHƯNG TRONG INTERFACE THÌ KHÁC MỘT CLASS CÓ THỂ IMPLEMENT NHIỀU INTERFACE 
+
+ĐỂ IMPLEMENT NHIỀU INTERFACE TRONG CLASS TA PHÂN TÁCH CÁC INTERFACE BỞI DẤU PHẨY
+
+interface FirstInterface {
+  public void myMethod(); // interface method
+}
+
+interface SecondInterface {
+  public void myOtherMethod(); // interface method
+}
+
+class DemoClass implements FirstInterface, SecondInterface {
+  public void myMethod() {
+    System.out.println("Some text..");
+  }
+  public void myOtherMethod() {
+    System.out.println("Some other text...");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    DemoClass myObj = new DemoClass();
+    myObj.myMethod();
+    myObj.myOtherMethod();
+  }
+}
+
+POLYMOPHISM CÓ TÍNH TƯƠNG QUAN VỚI TÍNH KẾ THỪA BỞI KHI MỘT CLASS KẾ THỪA TỪ MỘT CLASS KHÁC NÓ SẼ CÓ NHỮNG THUỘC TÍNH, PHƯƠNG THỨC
+MÀ LỚP CHA. SAU ĐÓ MỖI CLASS LẤY PHƯƠNG THỨC CỦA LỚP CHA LÀM MỘT HÀNH ĐỘNG KHÁC THÌ ĐÓ LÀ TÍNH ĐA HÌNH 
+TÁC DỤNG CỦA NÓ LÀ TÁI SỬ DỤNG CODE , TRÁNH VIỆC PHẢI KHAI BÁO LẠI CÁC FUNCTION ĐÃ CÓ SẴN.
