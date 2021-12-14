@@ -10,7 +10,7 @@ public class KhachHang extends DiaChi {
     }
 
     public KhachHang(String thon, String xa, String huyen, String tinh, String maKhachHang, String tenKhachHang, ArrayList<TaiKhoan> dsTaiKhoan) {
-        super();
+        super(thon, xa, huyen, tinh);
         this.maKhachHang = maKhachHang;
         this.tenKhachHang = tenKhachHang;
         this.dsTaiKhoan = dsTaiKhoan;

@@ -73,7 +73,7 @@ public class Main {
     public static void main(String[] args) {
         // CÂU A: KHAI BÁO MỘT CHI NHÁNH 
         ChiNhanhNganHang chiNhanh1 = new ChiNhanhNganHang(); 
-
+        
         KhachHang kh1 = new KhachHang(); // khách hàng của chi nhánh 1
         KhachHang kh2 = new KhachHang(); // khách hàng của chi nhánh 1
         TaiKhoan tk1 = new TaiKhoan();
