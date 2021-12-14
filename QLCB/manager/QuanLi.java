@@ -1,5 +1,6 @@
-package abs;
+package manager;
 
+import abs.ChucNang;
 import entities.CanBo;
 
 public class QuanLi extends ChucNang {

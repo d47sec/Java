@@ -2,10 +2,10 @@ package app;
 
 import java.util.Scanner;
 
-import abs.QuanLi;
 import entities.CongNhan;
 import entities.KySu;
 import entities.NhanVien;
+import manager.QuanLi;
 
 public class App {
     public static void main(String[] args) {
