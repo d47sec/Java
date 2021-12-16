@@ -1,19 +1,19 @@
 public class App {
 public static void main(String[] args) {
     Manager manager = new Manager();
-    Intern intern = new Intern();
-    intern.setId(1);
-    intern.setFullName("ThanhDat");
-    intern.setBirthDay("3/2/2001");
-    intern.setEmai("dat@gmail.com");
-    intern.setEmployee_count(0);
-    intern.setEmployee_type("Intern");
-    intern.Majors("ATTT");
-    intern.setPhone("098483433");
-    intern.setSemester(3);
-    intern.setUniName("KMP");
-    Certificate internCert = new Certificate("C1", "OSCP", "Gold", "20/2/2021");
-    intern.getLsCertificate().add(internCert);
+    Intern intern1 = new Intern();
+    intern1.setId(1);
+    intern1.setFullName("ThanhDat");
+    intern1.setBirthDay("3/2/2001");
+    intern1.setEmai("dat@gmail.com");
+    intern1.setEmployee_count(0);
+    intern1.setEmployee_type("Intern");
+    intern1.Majors("ATTT");
+    intern1.setPhone("098483433");
+    intern1.setSemester(3);
+    intern1.setUniName("KMP");
+    Certificate intern1Cert = new Certificate("C1", "OSCP", "Gold", "20/2/2021");
+    intern1.getLsCertificate().add(intern1Cert);
 
     Intern intern2 = new Intern();
     intern2.setId(2);
@@ -26,8 +26,8 @@ public static void main(String[] args) {
     intern2.setPhone("94939943");
     intern2.setSemester(3);
     intern2.setUniName("KMP");
-    Certificate intern2Cert = new Certificate("C2", "CEP", "Gold", "9/9/2021");
-    intern.getLsCertificate().add(intern2Cert);
+    Certificate intern2Cert = new Certificate("C2", "CEH", "Gold", "9/9/2021");
+    intern2.getLsCertificate().add(intern2Cert);
 
 
     Fresher fresher1 = new Fresher();
@@ -58,7 +58,7 @@ public static void main(String[] args) {
     Certificate fresher2Cert = new Certificate("C3", "OSWE", "Silver", "19/6/2021");
     fresher2.getLsCertificate().add(fresher2Cert);
 
-    manager.addEmp(intern); // them moi mot employee
+    manager.addEmp(intern1); // them moi mot employee
     manager.addEmp(intern2); // them moi mot employee
     manager.addEmp(fresher1); // them moi mot employee
 
