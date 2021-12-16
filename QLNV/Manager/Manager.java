@@ -3,7 +3,7 @@ public class Manager extends absFunction{
     public void addEmp(Employee e) {
         this.listEmp.add(e);
         for (Employee employee : listEmp) {
-            if(employee.getEmployee_type() == e.getEmployee_type()){
+            if(employee.getEmployee_type() == e.getEmployee_type() && employee.getId() == e.getId()){
                 employee.setEmployee_count(employee.getEmployee_count()+1);
             }
         }
@@ -58,12 +58,12 @@ public class Manager extends absFunction{
     }
 
     @Override
-    public int countEmp(){
+    public void countEmp(){
         int count = 0;
         for (Employee employee : listEmp) {
             count += employee.getEmployee_count();
         }
-        return count;
+        System.out.println("Total number of employees: " + count);
     }
     
     

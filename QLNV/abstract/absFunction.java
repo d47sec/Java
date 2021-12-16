@@ -5,6 +5,6 @@ public abstract class absFunction {
     public abstract void addEmp(Employee e);
     public abstract void updateEmp(Employee e);
     public abstract void deleteEmp(int id);
-    public abstract int countEmp();
+    public abstract void countEmp();
     public abstract void showAllEmp(String type);
 }

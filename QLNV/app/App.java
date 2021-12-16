@@ -66,10 +66,9 @@ public static void main(String[] args) {
     manager.deleteEmp(2); // xoa employee co id = 2
     manager.showAllEmp("Intern"); // hien thi tat ca employee co loai la intern 
     manager.showAllEmp("Fresher"); // hien thi tat employee co loai la fresher 
-
     manager.updateEmp(fresher2); // update fresher 1 lay thong tin tu fresher2
     manager.showAllEmp("Fresher");
 
-    System.out.println("Total number of employees: " + manager.countEmp()); // dem tat ca employee hien co 
+    manager.countEmp(); // dem tat ca employee hien co 
  }   
 }
