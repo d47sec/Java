@@ -27,7 +27,9 @@ public static void main(String[] args) {
     intern2.setSemester(3);
     intern2.setUniName("KMP");
     Certificate intern2Cert = new Certificate("C2", "CEH", "Gold", "9/9/2021");
+    Certificate intern2Cert2 = new Certificate("C22", "CISSP", "Diamon", "25/12/2021");
     intern2.getLsCertificate().add(intern2Cert);
+    intern2.getLsCertificate().add(intern2Cert2); // intern 2 nay co 2 cai cert 
 
 
     Fresher fresher1 = new Fresher();
@@ -67,7 +69,7 @@ public static void main(String[] args) {
     manager.showAllEmp("Intern"); // hien thi tat ca employee co loai la intern 
     manager.showAllEmp("Fresher"); // hien thi tat employee co loai la fresher 
     manager.updateEmp(fresher2); // update fresher 1 lay thong tin tu fresher2
-    manager.showAllEmp("Fresher");
+    manager.showAllEmp("Fresher"); // hien thi tat employe co loai la fresher 
 
     manager.countEmp(); // dem tat ca employee hien co 
  }   
