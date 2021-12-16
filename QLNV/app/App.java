@@ -30,19 +30,33 @@ public static void main(String[] args) {
     intern.getLsCertificate().add(intern2Cert);
 
 
-    Intern fresher1 = new Intern();
-    fresher1.setId(2);
+    Fresher fresher1 = new Fresher();
+    fresher1.setId(3);
     fresher1.setFullName("d47KMA");
     fresher1.setBirthDay("13/4/2001");
     fresher1.setEmai("d47@gmail.com");
     fresher1.setEmployee_count(0);
     fresher1.setEmployee_type("Fresher");
-    fresher1.Majors("ATTT");
+    fresher1.setEducation("Engineer");
     fresher1.setPhone("08439384");
-    fresher1.setSemester(5);
-    fresher1.setUniName("KMP");
+    fresher1.setGraduation_date("22/11/2024");
+    fresher1.setGraduation_rank("Good");
     Certificate fresher1Cert = new Certificate("C3", "OSWE", "Gold", "9/6/2021");
-    intern.getLsCertificate().add(fresher1Cert);
+    fresher1.getLsCertificate().add(fresher1Cert);
+
+    Fresher fresher2 = new Fresher();
+    fresher2.setId(3); // update employe co id la 3
+    fresher2.setFullName("lizzzzz");
+    fresher2.setBirthDay("4/4/2001");
+    fresher2.setEmai("lizz@gmail.com");
+    fresher2.setEmployee_count(0);
+    fresher2.setEmployee_type("Fresher");
+    fresher2.setEducation("Engineer");
+    fresher2.setPhone("094949434");
+    fresher2.setGraduation_date("24/5/2025");
+    fresher2.setGraduation_rank("Execlent");
+    Certificate fresher2Cert = new Certificate("C3", "OSWE", "Silver", "19/6/2021");
+    fresher2.getLsCertificate().add(fresher2Cert);
 
     manager.addEmp(intern); // them moi mot employee
     manager.addEmp(intern2); // them moi mot employee
@@ -52,6 +66,9 @@ public static void main(String[] args) {
     manager.deleteEmp(2); // xoa employee co id = 2
     manager.showAllEmp("Intern"); // hien thi tat ca employee co loai la intern 
     manager.showAllEmp("Fresher"); // hien thi tat employee co loai la fresher 
+
+    manager.updateEmp(fresher2); // update fresher 1 lay thong tin tu fresher2
+    manager.showAllEmp("Fresher");
 
  }   
 }
