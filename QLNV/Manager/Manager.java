@@ -56,6 +56,15 @@ public class Manager extends absFunction{
             }
         }        
     }
+
+    @Override
+    public int countEmp(){
+        int count = 0;
+        for (Employee employee : listEmp) {
+            count += employee.getEmployee_count();
+        }
+        return count;
+    }
     
     
 }
